@@ -95,12 +95,13 @@ header {
 .projects {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: left;
 }
 
 .projects .images {
   display: flex;
-width: 50%;
+  width: 50%;
   justify-content: center;
   align-items: center;
   margin: 0px auto;
@@ -136,13 +137,14 @@ width: 50%;
 .project {
   width: auto;
   display: flex;
+  flex-direction: row;
   margin: 30px;
   transition: all 0.3s ease-in-out;
 }
 
 .project .project-info {
   font-family: "Jomhuria", serif;
-  width: 50% ;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -287,8 +289,20 @@ form button {
     height: 300px;
     margin: 20px 0px 20px 20px;
   }
-  .project-info p{
-    max-width: 50%;
+
+  .project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .project-info p {
+    width: 100%;
+    text-align: center;
   }
   form input,
   form textarea {
@@ -319,7 +333,7 @@ form button {
     margin: 0px auto;
     margin-left: 20px;
   }
-  .project{
+  .project {
     width: 100%;
     flex-direction: column;
     margin: 0px auto;
@@ -338,8 +352,7 @@ form button {
     width: 100%;
     text-align: center;
   }
-  
-  
+
   form input,
   form textarea {
     width: 100%;
