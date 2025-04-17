@@ -278,7 +278,7 @@ form button {
 /* Footer End */
 /* Responsiveness */
 /* Tablets  AND large Screens*/
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   header {
     margin: 0px 0px 0px 0px;
     width: 100%;
