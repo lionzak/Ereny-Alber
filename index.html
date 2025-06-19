@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ereny Alber</title>
+  </head>
+  <script src="script.js"></script>
+  <script type="module" src="view-counter.js"></script>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="#" class="header-name">ERENY ALBER</a>
+          <nav class="desktop-nav">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <button
+            class="mobile-menu-toggle"
+            aria-label="Toggle mobile menu"
+            onclick="toggleMobileMenu()"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="mobile-nav" id="mobileNav">
+        <button
+          class="mobile-close"
+          onclick="toggleMobileMenu()"
+          aria-label="Close mobile menu"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <ul>
+          <li><a href="#home" onclick="toggleMobileMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMobileMenu()">About Me</a></li>
+          <li><a href="#projects" onclick="toggleMobileMenu()">Projects</a></li>
+          <li><a href="#skills" onclick="toggleMobileMenu()">Skills</a></li>
+          <li><a href="#contact" onclick="toggleMobileMenu()">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-image">
+            <img src="./images/ereny.png" alt="Ereny Alber - UI/UX Designer" />
+          </div>
+          <div class="hero-text">
+            <h1 class="hero-title">
+              HI THERE<br />
+              UI/UX Designer
+            </h1>
+            <p class="hero-description">
+              Innovative designer with a scientific mindset, leveraging biotech
+              knowledge to design user-friendly and effective interfaces.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://wa.me/+201275754717"
+                target="_blank"
+                aria-label="WhatsApp"
+              >
+                <img src="./images/bwhatsapp.png" alt="WhatsApp" />
+              </a>
+              <a
+                href="https://www.facebook.com/ereny.alber.1"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <img src="./images/bfacebook.png" alt="Facebook" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ereny-alber-8b9833288/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <img src="./images/blinkedin.png" alt="LinkedIn" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+          I am a <span>biotechnologist</span> with a keen interest in
+          <span>UI/UX design</span>. Currently, I hold a scholarship from the
+          <span>DEPI</span>, which enables me to
+          <span>deepen my knowledge</span> and skills in this dynamic field. My
+          goal is to blend my scientific background with
+          <span>design principles</span> to create
+          <span>user-friendly interfaces</span> that enhance the user
+          experience. I am dedicated to continuous learning and growth, eager to
+          contribute innovative ideas and solutions in
+          <span>UI/UX design</span>.
+        </p>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <!-- Project 1 -->
+        <article class="project">
+          <div class="project-images">
+            <img
+              src="./images/ecommerce2.png"
+              alt="E-Commerce App Screenshot 1"
+            />
+            <img
+              src="./images/ecommerce1.png"
+              alt="E-Commerce App Screenshot 2"
+            />
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce App</h3>
+            <p>
+              This project represents a complete redesign of an e-commerce
+              mobile application, aiming to enhance user experience, streamline
+              navigation, and improve overall visual aesthetics. The goal was to
+              create a modern, intuitive interface that aligns with current
+              design trends while ensuring usability across all user types.
+            </p>
+            <p class="project-tools">Tools: Figma</p>
+            <a
+              href="https://www.figma.com/design/Z7Xq0zqYAZxhHVv2PTZC2O/Untitled?t=2lOdqz0BRHJXOqK5-1"
+              target="_blank"
+            >
+              <button type="button" class="project-btn">View Project</button>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project">
+          <div class="project-images">
+            <img
+              src="./images/education1.png"
+              alt="Education Website Screenshot 1"
+            />
+            <img
+              src="./images/education2.png"
+              alt="Education Website Screenshot 2"
+            />
+          </div>
+          <div class="project-info">
+            <h3>Education Website</h3>
+            <p>
+              This project showcases my redesign of an educational website with
+              the goal of enhancing user experience, accessibility, and visual
+              clarity. The redesign focuses on clean layouts, clear information
+              hierarchy, and interactive elements that support a seamless
+              learning experience.
+            </p>
+            <p class="project-tools">Tools: Figma</p>
+            <a
+              href="https://www.figma.com/design/6d5vxI3QrmuO5JXXRtxcdZ/travel?m=auto&t=OidnTQ6LHEwRt3Va-6"
+              target="_blank"
+            >
+              <button type="button" class="project-btn">View Project</button>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project">
+          <div class="project-images">
+            <img src="./images/medic1.png" alt="Medical App Screenshot 1" />
+            <img src="./images/medic2.png" alt="Medical App Screenshot 2" />
+          </div>
+          <div class="project-info">
+            <h3>Medical App</h3>
+            <p>
+              This project presents the redesign of a medical application with a
+              user-centered approach aimed at improving accessibility,
+              usability, and overall user experience. The new interface was
+              crafted to meet modern UX/UI standards while ensuring compliance
+              with medical usability guidelines.
+            </p>
+            <p class="project-tools">Tools: Figma</p>
+            <a
+              href="https://www.figma.com/design/htxRGmU1CFMnCWD5vL0cw7/Untitled?m=auto&t=VV8ahJUZXBZuoueH-6"
+              target="_blank"
+            >
+              <button type="button" class="project-btn">View Project</button>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project">
+          <div class="project-images">
+            <img
+              src="./images/medic_travel.png"
+              alt="Medical Travel Website Screenshot 1"
+            />
+          </div>
+          <div class="project-info">
+            <h3>Adventure Travel Platform - Mobile Experience</h3>
+            <p>
+              A mobile-first travel website design featuring dramatic hero
+              imagery and an adventurous silhouette that immediately captures
+              the spirit of exploration. The interface showcases curated trip
+              destinations through visually compelling cards highlighting Arctic
+              expeditions, Amazon adventures, and Northern Lights experiences.
+              The design balances inspirational photography with practical
+              information, using warm earth tones and clear typography for
+              optimal mobile readability. Featured sections include trip
+              discovery, customer testimonials, and prominent booking CTAs that
+              guide users seamlessly from inspiration to conversion.
+            </p>
+            <p class="project-tools">Tools: Figma</p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-images">
+            <img
+              src="./images/globa.png"
+              alt="Medical Travel Website Screenshot 1"
+            />
+            <img
+              src="./images/globa2.png"
+              alt="Medical Travel Website Screenshot 1"
+            />
+          </div>
+          <div class="project-info">
+            <h3>Globa Care Website</h3>
+            <p>
+              A comprehensive healthcare website design that combines medical
+              expertise with user-centered accessibility. The platform features
+              an intuitive interface designed to help patients navigate complex
+              healthcare services, from appointment scheduling to medical
+              information access, while maintaining trust and clarity throughout
+              the user experience. The design emphasizes clean, professional
+              aesthetics with calming color schemes and clear information
+              hierarchy. Key features include streamlined patient portals,
+              service discovery sections, doctor profiles, and accessible health
+              resources. The interface prioritizes ease of use for diverse user
+              groups, ensuring critical healthcare information is always within
+              reach.
+            </p>
+            <p class="project-tools">Tools: Figma</p>
+            <a
+              href="https://www.figma.com/design/LTMNhMFysrZXa8IaWQoxIt/Medical-Web-site--Group-3-?node-id=0-1&p=f&t=lrPBt2ZCreXnK0qe-0"
+              target="_blank"
+            >
+              <button type="button" class="project-btn">View Project</button>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <img src="./images/figma.png" alt="Figma" />
+            <p>Figma</p>
+          </div>
+
+          <div class="skill">
+            <img src="./images/adobe_xd.png" alt="Canva" />
+            <p>Adobe XD</p>
+          </div>
+          <div class="skill">
+            <img src="./images/illustrator.png" alt="Canva" />
+            <p>Adobe illustrator</p>
+          </div>
+          <div class="skill">
+            <img src="./images/wordpress.png" alt="Canva" />
+            <p>Wordpress</p>
+          </div>
+          <div class="skill">
+            <img src="./images/miro.png" alt="Miro" />
+            <p>Miro</p>
+          </div>
+          <div class="skill">
+            <img src="./images/canva.png" alt="Canva" />
+            <p>Canva</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <img src="./images/whatsapp.png" alt="WhatsApp" />
+              <a href="https://wa.me/+201275754717" target="_blank"
+                >01275754717</a
+              >
+            </div>
+            <div class="contact-item">
+              <img src="./images/facebook.png" alt="Facebook" />
+              <a href="https://www.facebook.com/ereny.alber.1" target="_blank"
+                >ereny.alber.1</a
+              >
+            </div>
+            <div class="contact-item">
+              <img src="./images/linkedin.png" alt="LinkedIn" />
+              <a
+                href="https://www.linkedin.com/in/ereny-alber-8b9833288/"
+                target="_blank"
+                >ereny-alber-8b9833288</a
+              >
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/erenyalber214@gmail.com"
+            method="POST"
+          >
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="form-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-title">Copyrights © <span>Ereny Alber</span></p>
+          <div class="footer-social">
+            <a
+              href="https://www.linkedin.com/in/ereny-alber-8b9833288/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/ereny.alber.1"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
