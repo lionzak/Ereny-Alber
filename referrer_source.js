@@ -1,4 +1,3 @@
-console.log('Traffic source:');
 // Get the referrer (where user came from)
 const referrer = document.referrer;
 
