@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DHYEY60G3M"
+    ></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
@@ -13,8 +18,28 @@
     />
     <title>Ereny Alber</title>
   </head>
+
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-DHYEY60G3M"
+  ></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-XXXXXXXXXX");
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
   <script src="script.js"></script>
   <script type="module" src="view-counter.js"></script>
+  <script type="module" src="track-device.js"></script>
+  <script type="module" src="session_tracker.js"></script>
+  <script type="module" src="analytics.js"></script>
+  <script type="module" src="detect_browser.js"></script>
 
   <body>
     <!-- Header -->
@@ -80,6 +105,7 @@
               <a
                 href="https://wa.me/+201275754717"
                 target="_blank"
+                id="whatsapp-icon-1"
                 aria-label="WhatsApp"
               >
                 <img src="./images/bwhatsapp.png" alt="WhatsApp" />
@@ -87,6 +113,7 @@
               <a
                 href="https://www.facebook.com/ereny.alber.1"
                 target="_blank"
+                id="facebook-icon-1"
                 aria-label="Facebook"
               >
                 <img src="./images/bfacebook.png" alt="Facebook" />
@@ -94,6 +121,7 @@
               <a
                 href="https://www.linkedin.com/in/ereny-alber-8b9833288/"
                 target="_blank"
+                id="linkedin-icon-1"
                 aria-label="LinkedIn"
               >
                 <img src="./images/blinkedin.png" alt="LinkedIn" />
@@ -158,7 +186,9 @@
               href="https://www.figma.com/design/Z7Xq0zqYAZxhHVv2PTZC2O/Untitled?t=2lOdqz0BRHJXOqK5-1"
               target="_blank"
             >
-              <button type="button" class="project-btn">View Project</button>
+              <button type="button" class="project-btn" id="demo-project-1">
+                View Project
+              </button>
             </a>
           </div>
         </article>
@@ -189,7 +219,9 @@
               href="https://www.figma.com/design/6d5vxI3QrmuO5JXXRtxcdZ/travel?m=auto&t=OidnTQ6LHEwRt3Va-6"
               target="_blank"
             >
-              <button type="button" class="project-btn">View Project</button>
+              <button type="button" class="project-btn" id="demo-project-2">
+                View Project
+              </button>
             </a>
           </div>
         </article>
@@ -214,7 +246,9 @@
               href="https://www.figma.com/design/htxRGmU1CFMnCWD5vL0cw7/Untitled?m=auto&t=VV8ahJUZXBZuoueH-6"
               target="_blank"
             >
-              <button type="button" class="project-btn">View Project</button>
+              <button type="button" class="project-btn" id="demo-project-3  ">
+                View Project
+              </button>
             </a>
           </div>
         </article>
@@ -276,7 +310,9 @@
               href="https://www.figma.com/design/LTMNhMFysrZXa8IaWQoxIt/Medical-Web-site--Group-3-?node-id=0-1&p=f&t=lrPBt2ZCreXnK0qe-0"
               target="_blank"
             >
-              <button type="button" class="project-btn">View Project</button>
+              <button type="button" class="project-btn" id="demo-project-4">
+                View Project
+              </button>
             </a>
           </div>
         </article>
@@ -387,6 +423,7 @@
             <a
               href="https://www.linkedin.com/in/ereny-alber-8b9833288/"
               target="_blank"
+              id="linkedin-icon-2 "
               aria-label="LinkedIn"
             >
               <i class="fab fa-linkedin"></i>
@@ -394,6 +431,7 @@
             <a
               href="https://www.facebook.com/ereny.alber.1"
               target="_blank"
+              id="facebook-icon-2"
               aria-label="Facebook"
             >
               <i class="fab fa-facebook"></i>
@@ -404,3 +442,4 @@
     </footer>
   </body>
 </html>
+
