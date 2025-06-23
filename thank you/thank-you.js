@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const spanElement = document.querySelector("span.value");
   if (spanElement) {
-    spanElement.textContent = Math.floor(Math.random() * 9000);x  
+    spanElement.textContent = Math.floor(Math.random() * 9000);
   }
 });
 

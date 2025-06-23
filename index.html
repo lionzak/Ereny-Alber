@@ -47,6 +47,14 @@
   <script type="module" src="scripts/form-submission.js"></script>
 
   <body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+      <div style="text-align: center">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Sending your message...</div>
+      </div>
+    </div>
+
     <!-- Header -->
     <header>
       <div class="container">
@@ -267,7 +275,7 @@
               class="responsive-project-image"
             />
           </div>
-         
+
           <div class="project-info">
             <h3>Adventure Travel Platform - Mobile Experience</h3>
             <p>
