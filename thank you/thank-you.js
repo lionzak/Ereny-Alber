@@ -1,7 +1,15 @@
-document.getElementById("datetime").textContent = new Date().toLocaleString();
+// Wait for DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+  const now = new Date();
+  const formattedDate = now.toLocaleDateString('en-GB'); // This gives dd/mm/yyyy format
+  const formattedTime = now.toLocaleTimeString();
+  document.getElementById("datetime").textContent = `${formattedDate} ${formattedTime}`;
 
-const spanElement = document.querySelector("span.value");
-spanElement.textContent = Math.floor(Math.random() * 9000);
+  const spanElement = document.querySelector("span.value");
+  if (spanElement) {
+    spanElement.textContent = Math.floor(Math.random() * 9000);x  
+  }
+});
 
 function goHome() {
   window.location.replace("https://ereny-alber.vercel.app/");
@@ -10,6 +18,7 @@ function goHome() {
 function submitAnother() {
   window.location.replace("https://ereny-alber.vercel.app/#contact");
 }
+
 // Add sparkle animation
 const style = document.createElement("style");
 style.textContent = `
