@@ -5,11 +5,11 @@ const spanElement = document.querySelector("span.value");
 spanElement.textContent = Math.floor(Math.random() * 9000);
 
 function goHome() {
-  window.location.href = "https://ereny-alber.vercel.app/";
+  window.location.href = "/";
 }
 
 function submitAnother() {
-  window.location.href = "/";
+  window.location.href = "/#contact";
 }
 
 // Add some interactive sparkle effect
