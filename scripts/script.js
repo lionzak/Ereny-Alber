@@ -12,6 +12,7 @@ function toggleMobileMenu() {
   }
 }
 
+
 // Close mobile menu when clicking outside
 document.addEventListener("click", function (event) {
   const mobileNav = document.getElementById("mobileNav");
