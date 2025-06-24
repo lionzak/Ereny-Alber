@@ -36,7 +36,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 
-  <script src="script.js"></script>
+  <script src="scripts/script.js"></script>
   <script type="module" src="scripts/view-counter.js"></script>
   <script type="module" src="scripts/track-device.js"></script>
   <script type="module" src="scripts/session_tracker.js"></script>
@@ -119,24 +119,27 @@
               <a
                 href="https://wa.me/+201275754717"
                 target="_blank"
-                id="whatsapp-icon-1"
+                data-platform="whatsapp-icon-1"
                 aria-label="WhatsApp"
+                class="social-icon"
               >
                 <img src="./images/bwhatsapp.png" alt="WhatsApp" />
               </a>
               <a
                 href="https://www.facebook.com/ereny.alber.1"
                 target="_blank"
-                id="facebook-icon-1"
+                data-platform="facebook-icon-1"
                 aria-label="Facebook"
+                class="social-icon"
               >
                 <img src="./images/bfacebook.png" alt="Facebook" />
               </a>
               <a
                 href="https://www.linkedin.com/in/ereny-alber-8b9833288/"
                 target="_blank"
-                id="linkedin-icon-1"
+                data-platform="linkedin-icon-1"
                 aria-label="LinkedIn"
+                class="social-icon"
               >
                 <img src="./images/blinkedin.png" alt="LinkedIn" />
               </a>
@@ -382,7 +385,8 @@
             <a
               href="https://wa.me/+201275754717"
               target="_blank"
-              class="contact-item"
+              class="contact-item social-icon"
+              data-platform="whatsapp-icon-2"
             >
               <img src="./images/whatsapp.png" alt="WhatsApp" />
               01275754717
@@ -390,7 +394,8 @@
             <a
               href="https://www.facebook.com/ereny.alber.1"
               target="_blank"
-              class="contact-item"
+              class="contact-item social-icon"
+              data-platform="facebook-icon-2"
             >
               <img src="./images/facebook.png" alt="Facebook" />
               ereny.alber.1
@@ -398,7 +403,8 @@
             <a
               href="https://www.linkedin.com/in/ereny-alber-8b9833288/"
               target="_blank"
-              class="contact-item"
+              class="contact-item social-icon"
+              data-platform="linkedin-icon-2"
             >
               <img src="./images/linkedin.png" alt="LinkedIn" />
               ereny-alber-8b9833288
@@ -407,7 +413,7 @@
 
           <form
             class="contact-form"
-            action="https://getform.io/f/byvymjra"
+            action="https://getform.io/f/bwnwkxma"
             method="POST"
           >
             <div class="form-group">
@@ -443,16 +449,18 @@
             <a
               href="https://www.linkedin.com/in/ereny-alber-8b9833288/"
               target="_blank"
-              id="linkedin-icon-2 "
+              data-platform="linkedin-icon-3"
               aria-label="LinkedIn"
+              class="social-icon"
             >
               <i class="fab fa-linkedin"></i>
             </a>
             <a
               href="https://www.facebook.com/ereny.alber.1"
               target="_blank"
-              id="facebook-icon-2"
+              data-platform="facebook-icon-3"
               aria-label="Facebook"
+              class="social-icon"
             >
               <i class="fab fa-facebook"></i>
             </a>
