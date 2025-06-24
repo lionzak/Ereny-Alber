@@ -18,40 +18,32 @@ document.addEventListener("DOMContentLoaded", function () {
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      
+
       // Show loading spinner immediately
       showLoading();
-      
+
       const formData = new FormData(form);
 
       fetch(form.action, {
         method: "POST",
         body: formData,
       })
-        .then(response => {
-          // Hide loading spinner after response
+        .then((response) => {
           hideLoading();
-          
+
           if (response.ok) {
-            // Success - proceed with redirect
-            window.close();
-            window.open(targetUrl, "_blank");
-            setTimeout(() => {
-              if (!window.closed) {
-                window.location.href = targetUrl;
-              }
-            }, 200);
+            // Just redirect the current tab
+            window.location.href = targetUrl;
           } else {
-            // Handle error response
-            console.error('Form submission failed:', response.status);
-            alert('There was an error sending your message. Please try again.');
+            console.error("Form submission failed:", response.status);
+            alert("There was an error sending your message. Please try again.");
           }
         })
-        .catch(error => {
+        .catch((error) => {
           // Hide loading spinner on error
           hideLoading();
-          console.error('Error:', error);
-          alert('There was an error sending your message. Please try again.');
+          console.error("Error:", error);
+          alert("There was an error sending your message. Please try again.");
         });
     });
   }
