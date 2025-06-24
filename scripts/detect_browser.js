@@ -33,9 +33,7 @@ async function trackBrowserVisit() {
 
   if (error) {
     console.error("Browser tracking failed:", error.message);
-  } else {
-    console.log(`Browser "${browser}" count updated ✅`);
-  }
+  } 
 }
 
 trackBrowserVisit();    

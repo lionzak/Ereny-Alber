@@ -18,10 +18,8 @@ window.addEventListener("DOMContentLoaded", async () => {
     const anchors = document.querySelectorAll(
       `a[data-platform="${platform.toLowerCase()}"]`
     );
-    console.log(`Found ${anchors.length} anchor(s) for ${platform}`);
 
     anchors.forEach((a) => {
-      console.log(`Updating ${platform} link: ${link}`);
       a.href = link;
     });
   });

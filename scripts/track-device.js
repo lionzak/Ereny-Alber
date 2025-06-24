@@ -24,9 +24,7 @@ async function trackDeviceView() {
 
   if (error) {
     console.error("Failed to track device:", error.message);
-  } else {
-    console.log("Device tracked:", deviceType);
-  }
+  } 
 }
 
 // Call it once when page loads

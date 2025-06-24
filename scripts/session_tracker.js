@@ -9,7 +9,6 @@ const supabase = createClient(
 const sessionId = crypto.randomUUID();
 const startTime = Date.now();
 
-console.log("Page loaded at:", new Date(startTime));
 
 // Create initial session record
 await supabase.from("sessions").insert({

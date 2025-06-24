@@ -11,7 +11,6 @@ const start = performance.now();
 window.addEventListener("load", async () => {
   const end = performance.now();
   const loadTime = Math.round(end - start);
-  console.log(`Page load time: ${loadTime} ms`);
 
   // Generate or reuse a session ID
   let sessionId = localStorage.getItem("session_id");
@@ -30,7 +29,5 @@ window.addEventListener("load", async () => {
 
   if (error) {
     console.error("Error inserting page load time:", error.message);
-  } else {
-    console.log("Page load time saved to Supabase.");
   }
 });
