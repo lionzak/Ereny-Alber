@@ -1,0 +1,32 @@
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
+
+const supabase = createClient(
+  "https://fhxcizpcgopqomzlwmdl.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZoeGNpenBjZ29wcW9temx3bWRsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAxODEwOTksImV4cCI6MjA2NTc1NzA5OX0.IreRdrOuw4zwSrol1mln_44JK6scXwC1qbvrX8mUTVk"
+);
+
+async function loadPersonalInfo() {
+  const { data, error } = await supabase.rpc("get_personal_info");
+
+  if (error) {
+    console.error("Error fetching personal info:", error.message);
+    return;
+  }
+
+  if (!data || data.length === 0) {
+    console.warn("No personal info found.");
+    return;
+  }
+
+  const { brief, about, image_url } = data[0];
+
+  const briefEl = document.querySelector(".hero-description");
+  const aboutEl = document.querySelector(".about-text");
+  const imageEl = document.getElementById("personal-image");
+
+  if (briefEl) briefEl.textContent = brief;
+  if (aboutEl) aboutEl.textContent = about;
+  if (imageEl) imageEl.src = image_url;
+}
+
+document.addEventListener("DOMContentLoaded", loadPersonalInfo);
