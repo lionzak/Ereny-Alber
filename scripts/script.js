@@ -4,7 +4,6 @@ function toggleMobileMenu() {
 
   mobileNav.classList.toggle("active");
 
-  // Prevent body scroll when menu is open
   if (mobileNav.classList.contains("active")) {
     body.style.overflow = "hidden";
   } else {
@@ -13,7 +12,6 @@ function toggleMobileMenu() {
 }
 
 
-// Close mobile menu when clicking outside
 document.addEventListener("click", function (event) {
   const mobileNav = document.getElementById("mobileNav");
   const mobileToggle = document.querySelector(".mobile-menu-toggle");
@@ -28,7 +26,6 @@ document.addEventListener("click", function (event) {
   }
 });
 
-// Close mobile menu on window resize if desktop size
 window.addEventListener("resize", function () {
   const mobileNav = document.getElementById("mobileNav");
   if (window.innerWidth > 768 && mobileNav.classList.contains("active")) {
@@ -36,7 +33,6 @@ window.addEventListener("resize", function () {
   }
 });
 
-// Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();

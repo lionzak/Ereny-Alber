@@ -17,7 +17,7 @@ async function loadPersonalInfo() {
     return;
   }
 
-  const { brief, about, image_url } = data[0];
+  const { brief, about, image_url, effect_color } = data[0];
 
   const briefEl = document.querySelector(".hero-description");
   const aboutEl = document.querySelector(".about-text");
@@ -26,8 +26,13 @@ async function loadPersonalInfo() {
   if (briefEl) briefEl.textContent = brief;
 
   if (aboutEl) {
-    const processedAbout = about.replace(/<([^<>]+)>/g, '<span>$1</span>');
-    aboutEl.innerHTML = processedAbout; // Use innerHTML to apply span tags
+    const processedAbout = about.replace(/<([^<>]+)>/g, "<span>$1</span>");
+    aboutEl.innerHTML = processedAbout;
+    if (effect_color) {
+      aboutEl.querySelectorAll("span").forEach((span) => {
+        span.style.color = effect_color;
+      });
+    }
   }
 
   if (imageEl) imageEl.src = image_url;

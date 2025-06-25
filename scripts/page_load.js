@@ -12,14 +12,12 @@ window.addEventListener("load", async () => {
   const end = performance.now();
   const loadTime = Math.round(end - start);
 
-  // Generate or reuse a session ID
   let sessionId = localStorage.getItem("session_id");
   if (!sessionId) {
     sessionId = crypto.randomUUID();
     localStorage.setItem("session_id", sessionId);
   }
 
-  // Insert directly into Supabase
   const { error } = await supabase.from("page_load").insert([
     {
       session_id: sessionId,

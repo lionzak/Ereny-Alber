@@ -7,10 +7,8 @@ const supabaseKey =
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 async function trackViewCount() {
-  // Increment view count via RPC
   await supabase.rpc("increment_view_count");
 
-  // Fetch updated count
   const { data, error } = await supabase
     .from("viewers")
     .select("count")

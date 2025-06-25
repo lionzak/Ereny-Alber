@@ -6,13 +6,11 @@ const supabaseKey =
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-// Session and scroll tracking
 const sessionId = crypto.randomUUID();
 const milestones = [25, 50, 75, 100];
 let maxScroll = 0;
 let highestMilestone = 0;
 
-// Track scroll events
 window.addEventListener("scroll", () => {
   const scrollTop = window.pageYOffset;
   const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -32,7 +30,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Send final milestone on page exit
 window.addEventListener("beforeunload", async () => {
   if (highestMilestone === 0) return; // don't insert if nothing was reached
 

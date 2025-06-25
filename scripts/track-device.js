@@ -6,7 +6,6 @@ const SUPABASE_ANON_KEY =
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-// Determine device type based on screen width
 function getDeviceType() {
   const width = window.innerWidth;
 
@@ -27,5 +26,4 @@ async function trackDeviceView() {
   } 
 }
 
-// Call it once when page loads
 trackDeviceView();
