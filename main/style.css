@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* Loading spinner styles */
 .loading-overlay {
   position: fixed;
@@ -201,7 +205,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-  padding: clamp(30px, 8vw, 80px) 0;
+  padding: clamp(20px, 8vw, 10px) 0;
 }
 
 .hero-content {
@@ -284,7 +288,7 @@ nav a:hover {
 
 /* About Section */
 .about {
-  padding: clamp(40px, 8vw, 80px) 0;
+  padding: clamp(20px, 8vw, 10px) 0;
 }
 
 .about-text {
@@ -303,7 +307,7 @@ nav a:hover {
 
 /* Projects Section */
 .projects {
-  padding: clamp(40px, 8vw, 80px) 0;
+  padding: clamp(10px, 8vw, 10px) 0;
 }
 
 .project {
@@ -395,7 +399,7 @@ nav a:hover {
 
 /* Skills Section */
 .skills {
-  padding: clamp(40px, 8vw, 80px) 0;
+  padding: clamp(10px, 8vw, 10px) 0;
 }
 
 .skills-grid {
@@ -438,7 +442,7 @@ nav a:hover {
 
 /* Contact Section */
 .contact {
-  padding: clamp(40px, 8vw, 80px) 0;
+  padding: 0 0 clamp(40px, 8vw, 80px) 0;
 }
 
 .contact-content {
